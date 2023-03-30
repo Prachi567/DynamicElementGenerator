@@ -34,15 +34,15 @@ async function prachi(ans)
         conn.query(ans1,(err,data1) =>
         {
             if(err) throw err;
-            console.log("data1::::::::: ",data1);
-            console.log("data1::::::::: ",data1);
+            console.log("data1:::::: ",data1);
+            console.log("data1:::::: ",data1);
 
-            console.log("data1::::::::: ",data1);
-            console.log("data1::::::::: ",data1);
+       
 
             console.log("data1::::::::: ",data1);
 
     
+         var sql = `select o_value from option_combo where s_id = '${data1[0].s_id}'`;
          var sql = `select o_value from option_combo where s_id = '${data1[0].s_id}'`;
 
         conn.query(sql,(err,data) =>
@@ -52,7 +52,7 @@ async function prachi(ans)
             console.log(data);
     
             var sql2 = "";
-            sql2 +=`<label>${ans}: </label>`;
+            sql2 +=`<label>${ans}: </lael>`;
             sql2 += "<br>";
             sql2 += `<select id='${ans}' name='${ans}'> `;
             for(i=0;i<data.length;i++)
