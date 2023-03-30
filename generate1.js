@@ -35,11 +35,20 @@ async function prachi(ans)
         {
             if(err) throw err;
             console.log("data1::::::::: ",data1);
+            console.log("data1::::::::: ",data1);
+
+            console.log("data1::::::::: ",data1);
+            console.log("data1::::::::: ",data1);
+
+            console.log("data1::::::::: ",data1);
+
     
          var sql = `select o_value from option_combo where s_id = '${data1[0].s_id}'`;
+
         conn.query(sql,(err,data) =>
         {
             if(err) throw err;
+            
             console.log(data);
     
             var sql2 = "";
